@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid</title>
-  <link href="./style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width', initial-scale=1.0">
+    <title> Labs Grid</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <script> href="script.js"</script>
+    
+    <style>
+    .item1 { grid-area: header;}
+    .item2 { grid-area: sidebar; }
+    .item3 { grid-area: main area;}
+    .item4 { grid-area: footer; }
+    
+    html{
+        flex-direction: row;
+        font-family: sans-serif;
+        font-style: bold;
+        justify-content: center;
+        }
+
+
+        * {
+        box-sizing: border-box;
+        }
+        
+    .header{
+        border:1px;
+        padding:15px;
+    }
+
+    .menu{
+        width:25%;
+        float: left;
+        padding:15px;
+        border:1px;
+    }
+    .main {
+        width: 75%;
+        float: left;
+        padding: 15px;
+        border: 1px;
+        background-color: gray;
+
+    }
+
+        
+        .li{
+        display: flex;
+        list-style: none;
+        font-stretch: normal;
+        
+        }       
+       
+        
+
+    
+
+    </style>
 </head>
-
 <body>
-  <div class="header">
-    <div class="logo"><img src="./assets/pursuit-logo.png" alt="Pursuit logo" /></div>
-    <div class="menu">
-      <ul>
-        <li>
-          <a href="https://pursuit.org">Pursuit Home Page</a>
-        </li>
-        <li>
-          <a href="https://github.com/joinpursuit">Pursuit GitHub</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <div class="header">
+    
+        <img src="assets/pursuit-logo.png" alt="Pursuit-logo" width="max"       height="max" background-color="blue">
+            
+            <div class="upper">
+                <ul>
+                <li> href="https://pursuit.org">Pursuit Home Page</li>
 
-  <div class="primary-content">
-    <div class="sidebar">
-      <p>Sidebar.</p>
+                <li> href="https://github.com/joinpursuit">Pursuit GitHub</li>
+                </ul>
+            </div>
+    </div class="center">
+
+        <div class="sidebar" width="25%" float="left">
+            <h2>Sidebar</h2>
+    
+
+        <div class="menu" width="75%" float="left">
+            <h2>Main Content goes here</h2>
+    
     </div>
 
-    <div class="main">
-      <p>Main content goes here.</p>
-    </div>
-  </div>
+      <div class="Footer" background-color="yellow"></div>
 
-  <div class="footer">
-    <div>Footer goes here.</div>
-  </div>
+
 </body>
-
 </html>
